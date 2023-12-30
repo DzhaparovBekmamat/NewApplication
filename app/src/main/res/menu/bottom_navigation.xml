@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/historyFragment"
+        android:icon="@drawable/b1"
+        android:title="History" />
+    <item
+        android:id="@+id/mathsFragment"
+        android:icon="@drawable/b2"
+        android:title="Maths" />
+    <item
+        android:id="@+id/casesFragment"
+        android:icon="@drawable/b3"
+        android:title="Cases" />
+    <item
+        android:id="@+id/memoryFragment"
+        android:icon="@drawable/b4"
+        android:title="Memory" />
+    <item
+        android:id="@+id/choicesFragment"
+        android:icon="@drawable/b5"
+        android:title="Choices" />
+</menu>

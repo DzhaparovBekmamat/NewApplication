@@ -1,0 +1,3 @@
+<resources>
+    <style name="Base.Theme.NewApplication" parent="Theme.MaterialComponents.Light.NoActionBar.Bridge"></style>
+</resources>

@@ -1,0 +1,121 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/a"
+    android:orientation="vertical"
+    tools:context="com.chihuahua.pokereducation.ui.fragments.maths.items.ImpliedOddsFragment">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:src="@drawable/c"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        tools:ignore="MissingConstraints">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginEnd="8dp"
+                    android:src="@drawable/x"
+                    app:layout_constraintEnd_toStartOf="@id/textView1"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:fontFamily="@font/medium"
+                    android:text="IMPLIED ODDS"
+                    android:textColor="@color/b"
+                    android:textSize="38sp"
+                    app:layout_constraintStart_toEndOf="@id/imageView" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/f1" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/medium"
+                android:text="Implied Odds: Factoring in Future Odds"
+                android:textColor="@color/white"
+                android:textSize="19sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="12dp"
+                android:fontFamily="@font/light"
+                android:text="Implied odds, a concept often overlooked by novice players, can profoundly influence your poker strategy. Unlike pot odds, which solely focus on the current situation, implied odds take into account potential future odds, offering a broader perspective on the profitability of a hand. Let's delve deeper into this concept to understand how it can impact your decision-making at the poker table."
+                android:textColor="@color/white"
+                android:textSize="17sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/light"
+                android:text="Imagine you find yourself holding a potential flush draw, and the current pot odds might not justify a call. However, you have a strong read on your opponent, suspecting they will make a substantial odds of $50 or more if you hit your flush. In this scenario, your implied odds come into play. By considering both the current pot and the expected future odds, you can make a more informed decision"
+                android:textColor="@color/white"
+                android:textSize="17sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="16dp"
+                android:background="@drawable/text_view"
+                android:fontFamily="@font/light"
+                android:padding="10dp"
+                android:text="Calculating Implied Odds: A Balancing Act"
+                android:textColor="#F5F878"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:fontFamily="@font/light"
+                android:text="To calculate implied odds, you estimate the potential size of your opponent's future odds and weigh it against the current pot size. In this case, if your opponent's potential odds is $50, you need to assess whether the additional $50 justifies the current call. If the potential future gain is significantly larger than the cost of the current call, the implied odds become favorable"
+                android:textColor="@color/white"
+                android:textSize="17sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:fontFamily="@font/light"
+                android:text="Incorporating implied odds into your gameplay elevates your decision-making skills to a professional level. By considering not only the current pot but also the potential future odds, you gain a deeper understanding of the true value of your hands. This nuanced approach enables you to make profitable calls and well-timed bluffs, capitalizing on opponents' tendencies and maximizing your earnings. As you integrate the concept of implied odds into your poker arsenal, you transform from a mere player into a strategic tactician, capable of navigating the complex terrain of poker with finesse and precision."
+                android:textColor="@color/white"
+                android:textSize="17sp" />
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

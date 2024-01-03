@@ -1,0 +1,181 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/a"
+    android:orientation="vertical"
+    tools:context="com.chihuahua.pokereducation.ui.fragments.cases.items.CaseStudy4Fragment">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:src="@drawable/c"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        tools:ignore="MissingConstraints">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginEnd="8dp"
+                    android:src="@drawable/x"
+                    app:layout_constraintEnd_toStartOf="@id/textView1"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:fontFamily="@font/medium"
+                    android:text="TURNING A LOSER \nINTO A WINNER"
+                    android:textColor="@color/b"
+                    android:textSize="38sp"
+                    app:layout_constraintStart_toEndOf="@id/imageView" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:background="@drawable/text_view"
+                android:fontFamily="@font/light"
+                android:padding="10dp"
+                android:text="Scenario Recap"
+                android:textColor="#F5F878"
+                android:textSize="17sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/corner"
+                android:fontFamily="@font/light"
+                android:text="Player E, holding a weak hand post-flop, faces a challenging situation. Instead of folding, Player E leverages precise odds sizing, keen board awareness, and psychological acumen. By capitalizing on opponents' vulnerabilities, Player E maneuvers the odds rounds astutely, extracting chips and ultimately winning the hand against opponents with seemingly stronger holdings."
+                android:textColor="@color/white"
+                android:textSize="17sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/text_view"
+                android:fontFamily="@font/light"
+                android:padding="10dp"
+                android:text="Key Lessons"
+                android:textColor="#F5F878"
+                android:textSize="17sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:fontFamily="@font/medium"
+                android:text="Skillful Odds"
+                android:textColor="#F5F878"
+                android:textSize="17sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/light"
+                android:text="Player E’s ability to use odds sizing strategically becomes paramount. By gauging opponents’ reactions to different odds amounts, Player E manipulates the pot odds and induces opponents to make suboptimal decisions. Skillful odds transforms a weak hand into a formidable weapon, underscoring the significance of nuanced odds in shaping the outcome of a hand."
+                android:textColor="@color/white"
+                android:textSize="17sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:fontFamily="@font/medium"
+                android:text="Board Awareness"
+                android:textColor="#F5F878"
+                android:textSize="17sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/light"
+                android:text="Profound awareness of the community cards and their potential implications is a hallmark of elite poker players. Player E keenly observes the board texture, identifying opportunities where opponents might be vulnerable. Understanding the board’s potential for straights, flushes, or strong pairs enables informed decisions, ensuring that Player E maximizes their chances while minimizing risks."
+                android:textColor="@color/white"
+                android:textSize="17sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:fontFamily="@font/medium"
+                android:text="Psychological Tactics"
+                android:textColor="#F5F878"
+                android:textSize="17sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/light"
+                android:text="Poker is a game of psychology as much as strategy. Player E exploits opponents’ tendencies and emotions, using psychological tactics to create doubt and confusion. By strategically timing raises and displaying confidence, Player E instills uncertainty in opponents’ minds, leading them to question the strength of their own hands. Manipulating opponents’ emotions is an art that elevates poker from a game of chance to a battle of minds."
+                android:textColor="@color/white"
+                android:textSize="17sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:fontFamily="@font/medium"
+                android:text="Seizing Opportunities"
+                android:textColor="#F5F878"
+                android:textSize="17sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/light"
+                android:text="Recognizing opportune moments to strike is pivotal. Player E seizes the precise moment when opponents exhibit signs of vulnerability. Whether it’s hesitation, uncertainty, or overconfidence, Player E capitalizes on opponents’ weaknesses, transforming a losing situation into a winning one. Timing, combined with astute observation, empowers players to exploit opponents’ vulnerabilities effectively."
+                android:textColor="@color/white"
+                android:textSize="17sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:fontFamily="@font/medium"
+                android:text="Psychological Resilience"
+                android:textColor="#F5F878"
+                android:textSize="17sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/light"
+                android:text="Enduring moments of uncertainty and potential setbacks, Player E maintains composure. Emotional resilience in the face of intense gameplay ensures rational decision-making. While others might succumb to pressure, Player E’s calm and calculated approach underpins the ability to orchestrate a successful comeback, demonstrating that maintaining emotional stability is a key asset in high-stakes poker."
+                android:textColor="@color/white"
+                android:textSize="17sp" />
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

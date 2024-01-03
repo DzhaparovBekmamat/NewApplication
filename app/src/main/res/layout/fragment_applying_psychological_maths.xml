@@ -1,0 +1,160 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/a"
+    android:orientation="vertical"
+    tools:context="com.chihuahua.pokereducation.ui.fragments.cases.items.ApplyingPsychologicalMathsFragment">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:src="@drawable/c"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        tools:ignore="MissingConstraints">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginEnd="8dp"
+                    android:src="@drawable/x"
+                    app:layout_constraintEnd_toStartOf="@id/textView1"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:fontFamily="@font/medium"
+                    android:text="APPLY MATHS \nPSYCHOLOGY"
+                    android:textColor="@color/b"
+                    android:textSize="38sp"
+                    app:layout_constraintStart_toEndOf="@id/imageView" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/f7" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/medium"
+                android:text="Reverse Tells and Decoding Opponents: \nThe Poker Psychic’s Playbook"
+                android:textColor="@color/white"
+                android:textSize="19sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:fontFamily="@font/light"
+                android:text="In the enigmatic world of poker, where hidden intentions and concealed strategies shape the game, mastering reverse tells is akin to delving into the mystical realm of psychic powers. The Poker Psychic’s Playbook unfolds a strategy that goes beyond the visible, allowing players to decipher opponents' thoughts, predict their moves, and gain an unprecedented advantage at the table."
+                android:textColor="@color/white"
+                android:textSize="17sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="16dp"
+                android:background="@drawable/text_view"
+                android:fontFamily="@font/light"
+                android:padding="10dp"
+                android:text="The Language of Silence: Decoding Unspoken Cues"
+                android:textColor="#F5F878"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/light"
+                android:text="Just as a psychic reads energies and vibes, a skilled poker player decodes the unspoken cues at the table. Reverse tells involve understanding opponents' probable thoughts based on their actions, gestures, and facial expressions. A sudden raise after a series of folds might indicate a powerful hand; a hesitant call might signify uncertainty. By observing these subtle signals, a poker psychic creates a mental algorithm, deciphering opponents' strategies and intentions."
+                android:textColor="@color/white"
+                android:textSize="17sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="16dp"
+                android:background="@drawable/text_view"
+                android:fontFamily="@font/light"
+                android:padding="10dp"
+                android:text="The Art of Observation: Seeing Beyond the Cards"
+                android:textColor="#F5F878"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/light"
+                android:text="A poker psychic possesses an acute sense of observation. It’s not merely about the cards on the table; it's about the player behind those cards. Is there a change in demeanor? Does the opponent's gaze shift slightly? These nuances, invisible to the untrained eye, become the bread and butter of the poker psychic. Every twitch, every sigh, every pause becomes a clue, enabling them to peer into the depths of opponents' minds and anticipate their moves."
+                android:textColor="@color/white"
+                android:textSize="17sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="16dp"
+                android:background="@drawable/text_view"
+                android:fontFamily="@font/light"
+                android:padding="10dp"
+                android:text="Anticipating the Unseen: Strategic Decision-Making"
+                android:textColor="#F5F878"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/light"
+                android:text="While other players focus on the visible cards, the poker psychic anticipates the unseen. Through reverse tells, they predict an opponent’s next move before it even happens. If a player suddenly becomes overly confident, the psychic senses a bluff. If there's a subtle hint of doubt in their eyes, the psychic foresees a fold. This anticipation allows them to make strategic decisions that baffle opponents, leaving them wondering how their secrets were unveiled."
+                android:textColor="@color/white"
+                android:textSize="17sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="16dp"
+                android:background="@drawable/text_view"
+                android:fontFamily="@font/light"
+                android:padding="10dp"
+                android:text="Mastering the Psychic Mind Game"
+                android:textColor="#F5F878"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/light"
+                android:text="In the ultimate showdown, the poker psychic doesn’t just play the cards; they play the opponent's mind. Bluffing the bluffer becomes an art form. By mirroring an opponent's reverse tells, the psychic creates a mirage, leading the opponent into a trap of their own making. The opponent, thinking they have outsmarted the psychic, falls victim to their own strategy, revealing the true power of reverse tells in the psychic mind game."
+                android:textColor="@color/white"
+                android:textSize="17sp" />
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

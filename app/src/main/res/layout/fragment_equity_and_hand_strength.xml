@@ -1,0 +1,141 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/a"
+    android:orientation="vertical"
+    tools:context="com.chihuahua.pokereducation.ui.fragments.maths.items.EquityAndHandStrengthFragment">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:src="@drawable/c"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        tools:ignore="MissingConstraints">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginEnd="8dp"
+                    android:src="@drawable/x"
+                    app:layout_constraintEnd_toStartOf="@id/textView1"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:fontFamily="@font/medium"
+                    android:text="EQUITY &amp; HAND \STRENGTH"
+                    android:textColor="@color/b"
+                    android:textSize="38sp"
+                    app:layout_constraintStart_toEndOf="@id/imageView" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/f5" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/medium"
+                android:text="Equity and Hand Strength: Mastering Poker’s Balance Sheet"
+                android:textColor="@color/white"
+                android:textSize="19sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:fontFamily="@font/light"
+                android:text="Equity, the financial term denoting ownership, finds its poker counterpart in evaluating the strength of your hand against potential opponents. Imagine poker as a high-stakes financial market where each hand is an investment. Your equity represents your potential share of the pot, calculated based on your hand and the community cards. This dynamic value fluctuates with every turn and river card, presenting a constant challenge and opportunity. For instance, if you hold a pair of Aces on the flop, your equity skyrockets if the community cards don’t hint at possible straights or flushes for your opponents. Calculating your equity meticulously provides the foundation for strategic decisions, guiding your odds, calls, and folds. It's akin to managing a diverse portfolio, where precision and foresight are key, maximizing earnings while minimizing losses."
+                android:textColor="@color/white"
+                android:textSize="17sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="16dp"
+                android:background="@drawable/text_view"
+                android:fontFamily="@font/light"
+                android:padding="10dp"
+                android:text="Understanding Equity: Your Share of the Pot"
+                android:textColor="#F5F878"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/light"
+                android:text="In poker, equity represents your potential share of the pot based on the strength of your hand and the community cards. It's akin to owning a portion of a company based on the valuation of its assets. Calculating equity involves assessing all possible outcomes and their associated probabilities. For instance, if you have a flush draw, you need to consider the odds of completing your flush by the river. Understanding your equity enables you to make informed decisions about odds, calling, or folding, maximizing your potential earnings while minimizing losses."
+                android:textColor="@color/white"
+                android:textSize="17sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="16dp"
+                android:background="@drawable/text_view"
+                android:fontFamily="@font/light"
+                android:padding="10dp"
+                android:text="Hand Strength: The Building Blocks of Equity"
+                android:textColor="#F5F878"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/light"
+                android:text="Hand strength refers to the inherent power of your current hand, unaffected by potential future cards. Much like a company’s core assets, your hand strength is vital in determining your equity. For example, holding a pair of Aces is a strong hand, while having a lower pair might be weaker. Your hand strength provides the foundation upon which you calculate your equity, guiding your strategic choices throughout the game."
+                android:textColor="@color/white"
+                android:textSize="17sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="16dp"
+                android:background="@drawable/text_view"
+                android:fontFamily="@font/light"
+                android:padding="10dp"
+                android:text="Precision and Foresight: The Keys to Success"
+                android:textColor="#F5F878"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/light"
+                android:text="In the intricate dance of poker, precision and foresight are paramount. Evaluating your equity with meticulous detail is akin to analyzing a company’s financial statements with a discerning eye. It requires calculating probabilities, understanding opponent tendencies, and predicting potential outcomes. Just as a skilled investor navigates market volatility, a seasoned poker player navigates the uncertainties of the game, using their understanding of equity and hand strength to make calculated moves, ensuring that in the end, their chips, like wise investments, grow steadily, reflecting their mastery of the game’s intricate balance sheet."
+                android:textColor="@color/white"
+                android:textSize="17sp" />
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

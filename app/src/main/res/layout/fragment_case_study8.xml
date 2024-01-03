@@ -1,0 +1,181 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/a"
+    android:orientation="vertical"
+    tools:context="com.chihuahua.pokereducation.ui.fragments.cases.items.CaseStudy8Fragment">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:src="@drawable/c"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        tools:ignore="MissingConstraints">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginEnd="8dp"
+                    android:src="@drawable/x"
+                    app:layout_constraintEnd_toStartOf="@id/textView1"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:fontFamily="@font/medium"
+                    android:text="THE GAME-CHANGING \nRIVER DECISION"
+                    android:textColor="@color/b"
+                    android:textSize="32sp"
+                    app:layout_constraintStart_toEndOf="@id/imageView" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:background="@drawable/text_view"
+                android:fontFamily="@font/light"
+                android:padding="10dp"
+                android:text="Scenario Recap"
+                android:textColor="#F5F878"
+                android:textSize="17sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/corner"
+                android:fontFamily="@font/light"
+                android:text="Player I, holding a formidable hand, faces a substantial odds on the river from their opponent, Player X. With the entire hand history and community cards in mind, Player I meticulously analyzes the situation. Assessing the opponent's tendencies, past actions, and considering the final community cards, Player I makes a calculated decision to call. Player I's astuteness pays off, as the opponent reveals a weaker hand, leading to a substantial pot win."
+                android:textColor="@color/white"
+                android:textSize="17sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/text_view"
+                android:fontFamily="@font/light"
+                android:padding="10dp"
+                android:text="Key Lessons"
+                android:textColor="#F5F878"
+                android:textSize="17sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:fontFamily="@font/medium"
+                android:text="Analyzing Hand History"
+                android:textColor="#F5F878"
+                android:textSize="17sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/light"
+                android:text="A critical aspect of the game-changing river decision involves meticulous analysis of the hand history. Player I carefully reviews past odds patterns, opponent tendencies, and community cards' evolution. A comprehensive understanding of the hand's progression provides invaluable insights, enabling players to make informed decisions on the river."
+                android:textColor="@color/white"
+                android:textSize="17sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:fontFamily="@font/medium"
+                android:text="Considering Opponent Tendencies"
+                android:textColor="#F5F878"
+                android:textSize="17sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/light"
+                android:text="Player I's success lies in their ability to read the opponent. Recognizing the opponent's odds tendencies, bluffs, and genuine hands is pivotal. Player I's astute observation of the opponent's behavior aids in deciphering the likely hand strength, allowing for a more accurate assessment of the situation."
+                android:textColor="@color/white"
+                android:textSize="17sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:fontFamily="@font/medium"
+                android:text="Evaluating Final Community Cards"
+                android:textColor="#F5F878"
+                android:textSize="17sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/light"
+                android:text="The final community cards on the river hold immense significance. Player I meticulously evaluates the possible combinations and potential hands that opponents could hold based on the community cards. This careful consideration ensures that Player I's decision is grounded in a deep understanding of the hand's potential outcomes."
+                android:textColor="@color/white"
+                android:textSize="17sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:fontFamily="@font/medium"
+                android:text="Understanding Pot Odds"
+                android:textColor="#F5F878"
+                android:textSize="17sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/light"
+                android:text="Although not explicitly mentioned, the consideration of pot odds is implicit in Player I's decision-making. Assessing the size of the pot, the opponent's odds, and the likelihood of winning, Player I evaluates whether the call is profitable in the long run. A favorable pot odds calculation further reinforces the wisdom behind the game-changing river call."
+                android:textColor="@color/white"
+                android:textSize="17sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:fontFamily="@font/medium"
+                android:text="The Art of Controlled Confidence"
+                android:textColor="#F5F878"
+                android:textSize="17sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/light"
+                android:text="Player I exhibits controlled confidence in making the river decision. Confident yet not impulsive, Player I's demeanor influences the opponent's perception. This artful blend of confidence and composure can create doubt in the opponent's mind, making bluffs less effective and genuine hands more convincing."
+                android:textColor="@color/white"
+                android:textSize="17sp" />
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

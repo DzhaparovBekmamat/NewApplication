@@ -15,4 +15,46 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/medium"
+            android:text="HISTORY"
+            android:textColor="#F5F878"
+            android:textSize="38sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/i" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:fontFamily="@font/light"
+            android:text="Welcome to the Poker Decision Scenarios Mini Game! Test your poker skills in eight intense situations. Your goal: make the right calls and outsmart your opponents. Ready to dive in and conquer the high-stakes world of poker? Let's play!"
+            android:textColor="@color/white"
+            android:textSize="17sp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:background="@drawable/button_yellow"
+            android:fontFamily="@font/medium"
+            android:text="Play"
+            android:textAllCaps="false"
+            android:textSize="19sp" />
+    </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

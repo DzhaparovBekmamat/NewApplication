@@ -1,0 +1,181 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/a"
+    android:orientation="vertical"
+    tools:context="com.chihuahua.pokereducation.ui.fragments.cases.items.CaseStudy3Fragment">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:src="@drawable/c"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        tools:ignore="MissingConstraints">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginEnd="8dp"
+                    android:src="@drawable/x"
+                    app:layout_constraintEnd_toStartOf="@id/textView1"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:fontFamily="@font/medium"
+                    android:text="THE WELL-TIMED \nFOLD"
+                    android:textColor="@color/b"
+                    android:textSize="38sp"
+                    app:layout_constraintStart_toEndOf="@id/imageView" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:background="@drawable/text_view"
+                android:fontFamily="@font/light"
+                android:padding="10dp"
+                android:text="Scenario Recap"
+                android:textColor="#F5F878"
+                android:textSize="17sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/corner"
+                android:fontFamily="@font/light"
+                android:text="Player D, armed with a strong hand, faces relentless aggression from an opponent, Player Y, who odds aggressively throughout the hand. Despite holding a potentially winning hand, Player D recognizes the shifting dynamics. With foresight, Player D makes the difficult decision to fold, avoiding a disastrous outcome on the river where Player Y reveals an even stronger hand. This well-timed fold saves Player D’s chips and exemplifies the power of recognizing changing game situations."
+                android:textColor="@color/white"
+                android:textSize="17sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/text_view"
+                android:fontFamily="@font/light"
+                android:padding="10dp"
+                android:text="Key Lessons"
+                android:textColor="#F5F878"
+                android:textSize="17sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:fontFamily="@font/medium"
+                android:text="Dynamic Hand Assessment"
+                android:textColor="#F5F878"
+                android:textSize="17sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/light"
+                android:text="The well-timed fold underscores the importance of dynamically assessing a hand. Player D’s ability to adapt and evaluate the strength of their hand in response to the opponent’s aggression showcases strategic prowess. A great hand can quickly transform into a losing one based on opponents’ actions, making real-time evaluation crucial."
+                android:textColor="@color/white"
+                android:textSize="17sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:fontFamily="@font/medium"
+                android:text="Opponent Adaptation"
+                android:textColor="#F5F878"
+                android:textSize="17sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/light"
+                android:text="Player D adeptly recognizes the changing strategy of Player Y. This awareness of opponents’ aggression levels and adapting to their gameplay is a hallmark of skilled players. Understanding when an opponent’s behavior signifies a genuine threat is vital. Adapting to opponents’ aggression ensures that players avoid unnecessary risks and make prudent decisions."
+                android:textColor="@color/white"
+                android:textSize="17sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:fontFamily="@font/medium"
+                android:text="Swallowing One’s Pride"
+                android:textColor="#F5F878"
+                android:textSize="17sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/light"
+                android:text="The decision to fold a strong hand requires humility and pragmatism. Player D’s willingness to accept that a seemingly superior hand might be beaten is an essential trait in poker. Swallowing one’s pride and folding when necessary is a sign of maturity and strategic acumen. This ability to let go of a strong hand demonstrates a deep understanding of the game’s complexities."
+                android:textColor="@color/white"
+                android:textSize="17sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:fontFamily="@font/medium"
+                android:text="Long-Term Focus"
+                android:textColor="#F5F878"
+                android:textSize="17sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/light"
+                android:text="The well-timed fold reflects a player’s focus on the long-term game. While winning the current hand might be enticing, understanding that preserving chips for future hands is equally valuable requires foresight. Players who prioritize long-term gains over short-lived victories exhibit discipline and a deep understanding of poker’s nuances."
+                android:textColor="@color/white"
+                android:textSize="17sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:fontFamily="@font/medium"
+                android:text="Emotional Control"
+                android:textColor="#F5F878"
+                android:textSize="17sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/light"
+                android:text="Making a well-timed fold necessitates emotional control. It’s easy to succumb to pride or frustration and call a odds impulsively. Player D’s composed decision-making under pressure showcases emotional resilience, a vital trait in high-stakes poker. Emotional stability allows players to make rational decisions even in intense situations."
+                android:textColor="@color/white"
+                android:textSize="17sp" />
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

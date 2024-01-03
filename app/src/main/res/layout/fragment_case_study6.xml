@@ -1,0 +1,181 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/a"
+    android:orientation="vertical"
+    tools:context="com.chihuahua.pokereducation.ui.fragments.cases.items.CaseStudy6Fragment">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:src="@drawable/c"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        tools:ignore="MissingConstraints">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginEnd="8dp"
+                    android:src="@drawable/x"
+                    app:layout_constraintEnd_toStartOf="@id/textView1"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:fontFamily="@font/medium"
+                    android:text="THE STRATEGIC \nCHECK-RAISE"
+                    android:textColor="@color/b"
+                    android:textSize="38sp"
+                    app:layout_constraintStart_toEndOf="@id/imageView" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:background="@drawable/text_view"
+                android:fontFamily="@font/light"
+                android:padding="10dp"
+                android:text="Scenario Recap"
+                android:textColor="#F5F878"
+                android:textSize="17sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/corner"
+                android:fontFamily="@font/light"
+                android:text="Player G, holding a formidable hand, decides to check on the turn, enticing an opponent, Player Z, into odds. Recognizing an opportunity, Player G strategically employs the check-raise, luring Player Z into committing more chips. Player G's calculated move results in a substantial pot, showcasing the potent impact of a well-executed check-raise."
+                android:textColor="@color/white"
+                android:textSize="17sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/text_view"
+                android:fontFamily="@font/light"
+                android:padding="10dp"
+                android:text="Key Lessons"
+                android:textColor="#F5F878"
+                android:textSize="17sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:fontFamily="@font/medium"
+                android:text="Timing and Patience"
+                android:textColor="#F5F878"
+                android:textSize="17sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/light"
+                android:text="The essence of the check-raise lies in timing. Player G exhibits patience by withholding the aggressive play until the opportune moment. Timing the check-raise effectively capitalizes on opponents' odds actions, turning their aggression against them. Patiently waiting for the right moment to strike demonstrates the mastery of poker's ebb and flow."
+                android:textColor="@color/white"
+                android:textSize="17sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:fontFamily="@font/medium"
+                android:text="Psychological Manipulation"
+                android:textColor="#F5F878"
+                android:textSize="17sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/light"
+                android:text="The check-raise is a psychological tactic that exploits opponents' aggression. Player G's move creates a trap, enticing Player Z to odds into what seems like a vulnerable position. This psychological manipulation induces opponents to commit more chips, driven by a false sense of confidence. Understanding opponents' tendencies and emotions is paramount in executing a successful check-raise."
+                android:textColor="@color/white"
+                android:textSize="17sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:fontFamily="@font/medium"
+                android:text="Value Extraction"
+                android:textColor="#F5F878"
+                android:textSize="17sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/light"
+                android:text="The check-raise is a potent tool for extracting maximum value from opponents. By inducing additional odds, Player G inflates the pot size, ensuring a more substantial win when the hand concludes favorably. Effectively balancing the check-raise between inducing odds and not scaring opponents away ensures optimal value extraction, turning a strong hand into a lucrative pot."
+                android:textColor="@color/white"
+                android:textSize="17sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:fontFamily="@font/medium"
+                android:text="Bluffing with Purpose"
+                android:textColor="#F5F878"
+                android:textSize="17sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/light"
+                android:text="The check-raise isn't solely reserved for strong hands. Player G's confidence and strategic acumen create ambiguity. Opponents are left guessing whether the move signifies a powerful hand or a well-timed bluff. Bluffing with purpose, especially in strategic moments like the turn, adds layers of complexity to opponents' decision-making, making the check-raise a versatile weapon in a poker player's arsenal."
+                android:textColor="@color/white"
+                android:textSize="17sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:fontFamily="@font/medium"
+                android:text="Adaptability and Creativity"
+                android:textColor="#F5F878"
+                android:textSize="17sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/light"
+                android:text="Case Study 6 highlights the importance of adaptability and creativity in poker strategy. Player G creatively utilizes the check-raise, showcasing adaptability to the unique dynamics of the hand. Being able to employ diverse strategies based on the specific context of the game distinguishes skilled players from the average, underscoring the significance of creative adaptability in poker."
+                android:textColor="@color/white"
+                android:textSize="17sp" />
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

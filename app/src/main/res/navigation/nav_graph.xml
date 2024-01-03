@@ -13,7 +13,32 @@
         android:id="@+id/casesFragment"
         android:name="com.chihuahua.pokereducation.ui.fragments.cases.CasesFragment"
         android:label="fragment_cases"
-        tools:layout="@layout/fragment_cases" />
+        tools:layout="@layout/fragment_cases">
+        <action
+            android:id="@+id/action_casesFragment_to_caseStudy1Fragment"
+            app:destination="@id/caseStudy1Fragment" />
+        <action
+            android:id="@+id/action_casesFragment_to_caseStudy2Fragment"
+            app:destination="@id/caseStudy2Fragment" />
+        <action
+            android:id="@+id/action_casesFragment_to_caseStudy3Fragment"
+            app:destination="@id/caseStudy3Fragment" />
+        <action
+            android:id="@+id/action_casesFragment_to_caseStudy4Fragment"
+            app:destination="@id/caseStudy4Fragment" />
+        <action
+            android:id="@+id/action_casesFragment_to_caseStudy5Fragment"
+            app:destination="@id/caseStudy5Fragment" />
+        <action
+            android:id="@+id/action_casesFragment_to_caseStudy6Fragment"
+            app:destination="@id/caseStudy6Fragment" />
+        <action
+            android:id="@+id/action_casesFragment_to_caseStudy7Fragment"
+            app:destination="@id/caseStudy7Fragment" />
+        <action
+            android:id="@+id/action_casesFragment_to_caseStudy8Fragment"
+            app:destination="@id/caseStudy8Fragment" />
+    </fragment>
     <fragment
         android:id="@+id/choicesFragment"
         android:name="com.chihuahua.pokereducation.ui.fragments.choices.ChoicesFragment"
@@ -23,7 +48,32 @@
         android:id="@+id/mathsFragment"
         android:name="com.chihuahua.pokereducation.ui.fragments.maths.MathsFragment"
         android:label="fragment_maths"
-        tools:layout="@layout/fragment_maths" />
+        tools:layout="@layout/fragment_maths">
+        <action
+            android:id="@+id/action_mathsFragment_to_applyingPsychologicalMathsFragment"
+            app:destination="@id/applyingPsychologicalMathsFragment" />
+        <action
+            android:id="@+id/action_mathsFragment_to_bluffingWithMathsFragment"
+            app:destination="@id/bluffingWithMathsFragment" />
+        <action
+            android:id="@+id/action_mathsFragment_to_equityAndHandStrengthFragment"
+            app:destination="@id/equityAndHandStrengthFragment" />
+        <action
+            android:id="@+id/action_mathsFragment_to_expectedValueInOddsFragment"
+            app:destination="@id/expectedValueInOddsFragment" />
+        <action
+            android:id="@+id/action_mathsFragment_to_impliedOddsFragment"
+            app:destination="@id/impliedOddsFragment" />
+        <action
+            android:id="@+id/action_mathsFragment_to_potOddsFragment"
+            app:destination="@id/potOddsFragment" />
+        <action
+            android:id="@+id/action_mathsFragment_to_probabilityAndOddsFragment"
+            app:destination="@id/probabilityAndOddsFragment" />
+        <action
+            android:id="@+id/action_mathsFragment_to_ruleOf2And4Fragment"
+            app:destination="@id/ruleOf2And4Fragment" />
+    </fragment>
     <fragment
         android:id="@+id/memoryFragment"
         android:name="com.chihuahua.pokereducation.ui.fragments.memory.MemoryFragment"
@@ -33,5 +83,100 @@
         android:id="@+id/historyFragment"
         android:name="com.chihuahua.pokereducation.ui.fragments.history.HistoryFragment"
         android:label="HistoryFragment"
-        tools:layout="@layout/fragment_history"/>
+        tools:layout="@layout/fragment_history" />
+    <fragment
+        android:id="@+id/applyingPsychologicalMathsFragment"
+        android:name="com.chihuahua.pokereducation.ui.fragments.cases.items.ApplyingPsychologicalMathsFragment"
+        android:label="fragment_applying_psychological_maths"
+        tools:layout="@layout/fragment_applying_psychological_maths" />
+    <fragment
+        android:id="@+id/bluffingWithMathsFragment"
+        android:name="com.chihuahua.pokereducation.ui.fragments.maths.items.BluffingWithMathsFragment"
+        android:label="fragment_bluffing_with_maths"
+        tools:layout="@layout/fragment_bluffing_with_maths" />
+    <fragment
+        android:id="@+id/equityAndHandStrengthFragment"
+        android:name="com.chihuahua.pokereducation.ui.fragments.maths.items.EquityAndHandStrengthFragment"
+        android:label="fragment_equity_and_hand_strength"
+        tools:layout="@layout/fragment_equity_and_hand_strength" />
+    <fragment
+        android:id="@+id/expectedValueInOddsFragment"
+        android:name="com.chihuahua.pokereducation.ui.fragments.maths.items.ExpectedValueInOddsFragment"
+        android:label="fragment_expected_value_in_odds"
+        tools:layout="@layout/fragment_expected_value_in_odds" />
+    <fragment
+        android:id="@+id/impliedOddsFragment"
+        android:name="com.chihuahua.pokereducation.ui.fragments.maths.items.ImpliedOddsFragment"
+        android:label="fragment_implied_odds"
+        tools:layout="@layout/fragment_implied_odds" />
+    <fragment
+        android:id="@+id/potOddsFragment"
+        android:name="com.chihuahua.pokereducation.ui.fragments.maths.items.PotOddsFragment"
+        android:label="fragment_pot_odds"
+        tools:layout="@layout/fragment_pot_odds" />
+    <fragment
+        android:id="@+id/probabilityAndOddsFragment"
+        android:name="com.chihuahua.pokereducation.ui.fragments.maths.items.ProbabilityAndOddsFragment"
+        android:label="fragment_probability_and_odds"
+        tools:layout="@layout/fragment_probability_and_odds" />
+    <fragment
+        android:id="@+id/ruleOf2And4Fragment"
+        android:name="com.chihuahua.pokereducation.ui.fragments.maths.items.RuleOf2And4Fragment"
+        android:label="fragment_show_rule_of2_and4"
+        tools:layout="@layout/fragment_show_rule_of2_and4" />
+    <activity
+        android:id="@+id/splashScreenActivity"
+        android:name="com.chihuahua.pokereducation.ui.activity.SplashScreenActivity"
+        android:label="activity_splash_screen"
+        tools:layout="@layout/activity_splash_screen" />
+    <fragment
+        android:id="@+id/caseStudy1Fragment"
+        android:name="com.chihuahua.pokereducation.ui.fragments.cases.items.CaseStudy1Fragment"
+        android:label="fragment_case_study1"
+        tools:layout="@layout/fragment_case_study1" />
+    <fragment
+        android:id="@+id/caseStudy2Fragment"
+        android:name="com.chihuahua.pokereducation.ui.fragments.cases.items.CaseStudy2Fragment"
+        android:label="fragment_case_study2"
+        tools:layout="@layout/fragment_case_study2" />
+    <fragment
+        android:id="@+id/caseStudy3Fragment"
+        android:name="com.chihuahua.pokereducation.ui.fragments.cases.items.CaseStudy3Fragment"
+        android:label="fragment_case_study3"
+        tools:layout="@layout/fragment_case_study3" />
+    <fragment
+        android:id="@+id/caseStudy4Fragment"
+        android:name="com.chihuahua.pokereducation.ui.fragments.cases.items.CaseStudy4Fragment"
+        android:label="fragment_case_study4"
+        tools:layout="@layout/fragment_case_study4" />
+    <fragment
+        android:id="@+id/caseStudy5Fragment"
+        android:name="com.chihuahua.pokereducation.ui.fragments.cases.items.CaseStudy5Fragment"
+        android:label="fragment_case_study5"
+        tools:layout="@layout/fragment_case_study5" />
+    <fragment
+        android:id="@+id/caseStudy6Fragment"
+        android:name="com.chihuahua.pokereducation.ui.fragments.cases.items.CaseStudy6Fragment"
+        android:label="fragment_case_study6"
+        tools:layout="@layout/fragment_case_study6" />
+    <fragment
+        android:id="@+id/caseStudy7Fragment"
+        android:name="com.chihuahua.pokereducation.ui.fragments.cases.items.CaseStudy7Fragment"
+        android:label="fragment_case_study7"
+        tools:layout="@layout/fragment_case_study7" />
+    <fragment
+        android:id="@+id/caseStudy8Fragment"
+        android:name="com.chihuahua.pokereducation.ui.fragments.cases.items.CaseStudy8Fragment"
+        android:label="fragment_case_study8"
+        tools:layout="@layout/fragment_case_study8" />
+    <fragment
+        android:id="@+id/gameFragment"
+        android:name="com.chihuahua.pokereducation.ui.fragments.choices.quiz.fragments.GameFragment"
+        android:label="fragment_game"
+        tools:layout="@layout/fragment_game" />
+    <fragment
+        android:id="@+id/scoreFragment"
+        android:name="com.chihuahua.pokereducation.ui.fragments.choices.quiz.fragments.ScoreFragment"
+        android:label="fragment_score"
+        tools:layout="@layout/fragment_score" />
 </navigation>

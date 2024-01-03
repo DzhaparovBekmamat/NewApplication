@@ -30,8 +30,10 @@
         android:layout_marginHorizontal="16dp"
         android:background="@drawable/button"
         android:backgroundTint="#F5F878"
-        android:fontFamily="@font/kanit"
+        android:textSize="19sp"
+        android:fontFamily="@font/medium"
         android:text="Next"
+        android:textAllCaps="false"
         app:layout_constraintBottom_toTopOf="@id/worm_dots_indicator" />
 
     <com.google.android.material.tabs.TabLayout

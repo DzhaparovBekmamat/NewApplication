@@ -1,37 +1,50 @@
 package com.chihuahua.pokereducation.ui.fragments.maths
 
-import android.util.Log
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.template.newapplication.databinding.NoteMathsBinding
 
 class MathsAdapter(
-    private val dataList: List<MathsModel>,
-) : RecyclerView.Adapter<MathsAdapter.MathsViewHolder>() {
+    private val mathsList: List<MathsModel>, private val listener: OnItemClickListener
+) : RecyclerView.Adapter<MathsAdapter.ViewHolder>() {
 
-    inner class MathsViewHolder(private val binding: NoteMathsBinding) :
+    interface OnItemClickListener {
+        fun onItemClick(position: Int)
+    }
+
+    inner class ViewHolder(private val binding: NoteMathsBinding) :
         RecyclerView.ViewHolder(binding.root) {
-        fun onBind(model: MathsModel) {
-            binding.textView1.text = model.name
-            binding.textView2.text = model.description
-            model.imageView?.let { binding.imageView1.setImageResource(it) }
-            Log.d("MathsAdapter", "Data bound for position: $adapterPosition")
+
+        fun bind(mathsItem: MathsModel) {
+            binding.apply {
+                mathsItem.imageView?.let { imageView1.setImageResource(it) }
+                textView1.text = mathsItem.name
+                textView2.text = mathsItem.description
+
+                root.setOnClickListener {
+                    val position = adapterPosition
+                    if (position != RecyclerView.NO_POSITION) {
+                        listener.onItemClick(position)
+                    }
+                }
+            }
         }
     }
 
-    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MathsViewHolder {
-        val inflater = LayoutInflater.from(parent.context)
-        val binding = NoteMathsBinding.inflate(inflater, parent, false)
-        return MathsViewHolder(binding)
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
+        val binding = NoteMathsBinding.inflate(LayoutInflater.from(parent.context), parent, false)
+        return ViewHolder(binding)
     }
 
-    override fun onBindViewHolder(holder: MathsViewHolder, position: Int) {
-        val model = dataList[position]
-        holder.onBind(model)
+    override fun onBindViewHolder(holder: ViewHolder, position: Int) {
+        val currentItem = mathsList[position]
+        holder.bind(currentItem)
     }
 
-    override fun getItemCount(): Int {
-        return dataList.size
+    override fun getItemCount() = mathsList.size
+
+    fun getItemAtPosition(position: Int): MathsModel {
+        return mathsList[position]
     }
 }

@@ -17,6 +17,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <ScrollView
+        android:id="@+id/scrollView"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
@@ -31,10 +32,10 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_margin="16dp"
-                android:fontFamily="@font/light"
+                android:fontFamily="@font/medium"
                 android:text="HISTORY"
                 android:textColor="#F5F878"
-                android:textSize="36sp"
+                android:textSize="38sp"
                 android:textStyle="bold" />
 
             <TextView
@@ -86,6 +87,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_margin="16dp"
+                android:fontFamily="@font/light"
                 android:text="Poker, a card game that combines skill, strategy, and psychology, has a history as diverse and intriguing as the game itself. Originating from various card games in different cultures, poker has evolved over centuries to become one of the most popular and enduring card games worldwide. In this article, we will take a captivating journey through the history of poker, exploring its origins, development, and cultural impact."
                 android:textColor="@color/white"
                 android:textSize="16sp" />
@@ -105,6 +107,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_margin="16dp"
+                android:fontFamily="@font/light"
                 android:text="The exact origins of poker remain shrouded in mystery, but its roots can be traced back to several card games played in different parts of the world. The Persian game 'As Nas,' the German game 'Pochspiel,' and the French game 'Poque' all contributed elements to the early versions of poker. These games involved odds, hand rankings, and bluffing – key components of modern poker."
                 android:textColor="@color/white"
                 android:textSize="16sp" />
@@ -124,6 +127,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_margin="16dp"
+                android:fontFamily="@font/light"
                 android:text="Poker made its way to America through French settlers in New Orleans and quickly gained popularity along the Mississippi River. By the early 19th century, poker had become a staple of American gambling culture. The game underwent various modifications, leading to the introduction of new variants like stud poker and draw poker. The Civil War further propagated poker, with soldiers on both sides passing the time with card games"
                 android:textColor="@color/white"
                 android:textSize="16sp" />
@@ -143,6 +147,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_margin="16dp"
+                android:fontFamily="@font/light"
                 android:text="The 20th century saw the emergence of Texas Hold'em as the dominant variant of poker. The game's popularity skyrocketed, partly due to the World Series of Poker (WSOP) established in 1970. The WSOP became the ultimate poker event, drawing players and spectators from around the world. Television broadcasts and the internet further fueled the poker boom, transforming it into a mainstream phenomenon"
                 android:textColor="@color/white"
                 android:textSize="16sp" />
@@ -162,6 +167,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_margin="16dp"
+                android:fontFamily="@font/light"
                 android:text="The late 20th and early 21st centuries witnessed the rise of online poker. With the advent of internet technology, poker enthusiasts could play and compete against opponents from different countries without leaving their homes. Online poker platforms and tournaments flourished, making the game accessible to a global audience. This digital revolution contributed significantly to the game's widespread popularity"
                 android:textColor="@color/white"
                 android:textSize="16sp" />
@@ -181,6 +187,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_margin="16dp"
+                android:fontFamily="@font/light"
                 android:text="In the modern era, poker continues to thrive as a global phenomenon. Major tournaments, including the World Series of Poker, the European Poker Tour, and the World Poker Tour, attract players from diverse backgrounds, showcasing the game's universal appeal. Poker has also found its place in popular culture, appearing in movies, television shows, and literature, further solidifying its status as a timeless card game"
                 android:textColor="@color/white"
                 android:textSize="16sp" />
@@ -200,6 +207,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_margin="16dp"
+                android:fontFamily="@font/light"
                 android:text="The history of poker is a testament to its enduring allure and adaptability. From its obscure origins to becoming a beloved pastime enjoyed by millions, poker has transcended geographical and cultural boundaries. Its evolution reflects the dynamic nature of human interaction and the timeless appeal of strategic gaming. As poker continues to evolve and capture the imagination of new generations, its rich history serves as a reminder of the game's legacy and enduring significance in the world of entertainment and competitive sports."
                 android:textColor="@color/white"
                 android:textSize="16sp" />

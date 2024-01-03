@@ -1,0 +1,132 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/a"
+    android:orientation="vertical"
+    tools:context="com.chihuahua.pokereducation.ui.fragments.maths.items.RuleOf2And4Fragment">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:src="@drawable/c"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        tools:ignore="MissingConstraints">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginEnd="8dp"
+                    android:src="@drawable/x"
+                    app:layout_constraintEnd_toStartOf="@id/textView1"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:fontFamily="@font/medium"
+                    android:text="THE RULE OF 2 &amp; 4"
+                    android:textColor="@color/b"
+                    android:textSize="38sp"
+                    app:layout_constraintStart_toEndOf="@id/imageView" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/f3" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/medium"
+                android:text="The Rule of 2 and 4: A Rapid Insight into \nDrawing Hands"
+                android:textColor="@color/white"
+                android:textSize="19sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:fontFamily="@font/light"
+                android:text="Consider the scenario where you have an open-ended straight draw on the flop, meaning there are 8 cards (outs) left in the deck that can complete your straight. The Rule of 2 and 4 simplifies the calculation process. Multiply your outs by 4 to approximate the percentage chance of completing your draw by the turn. In this case, 8 outs multiplied by 4 equals 32%. This means you have approximately a 32% chance of hitting your straight by the turn if you stay in the hand."
+                android:textColor="@color/white"
+                android:textSize="17sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="16dp"
+                android:background="@drawable/text_view"
+                android:fontFamily="@font/light"
+                android:padding="10dp"
+                android:text="The River Calculation: Refining Your Expectations"
+                android:textColor="#F5F878"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:fontFamily="@font/light"
+                android:text="As the game progresses to the river, the Rule of 2 and 4 offers another estimation. Multiply your outs by 2 to approximate the percentage chance of completing your draw by the river. In our example, 8 outs multiplied by 2 equals 16%. This indicates that you have around a 16% chance of completing your straight by the river. While this percentage is lower than your turn odds, it still provides valuable insights, especially when considering pot odds and potential future odds."
+                android:textColor="@color/white"
+                android:textSize="17sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="16dp"
+                android:background="@drawable/text_view"
+                android:fontFamily="@font/light"
+                android:padding="10dp"
+                android:text="Strategic Implications: Informed Decision-Making"
+                android:textColor="#F5F878"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:fontFamily="@font/light"
+                android:text="The Rule of 2 and 4 serves as a valuable tool for players aiming to make quick decisions during the heat of the game. By rapidly estimating your odds, you can compare them to the pot odds and determine whether a call or a raise is justified. Additionally, this rule aids in understanding the relative strength of your hand, allowing you to adjust your odds strategy accordingly. While it's important to note that the Rule of 2 and 4 provides estimates and not exact probabilities, it equips players with a practical approach to assessing their drawing hands in real-time situations."
+                android:textColor="@color/white"
+                android:textSize="17sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/light"
+                android:text="Mastering the Rule of 2 and 4 enhances your efficiency on the poker table. By swiftly approximating your odds of completing drawing hands, you streamline your decision-making process, giving you more time to focus on strategic nuances and opponent behavior. As you integrate this rule into your gameplay, you gain a valuable tool that not only saves time but also enhances your overall effectiveness as a poker player, making every move calculated and strategic."
+                android:textColor="@color/white"
+                android:textSize="17sp" />
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

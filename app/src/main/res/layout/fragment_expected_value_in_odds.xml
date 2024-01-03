@@ -1,0 +1,160 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/a"
+    android:orientation="vertical"
+    tools:context="com.chihuahua.pokereducation.ui.fragments.maths.items.ExpectedValueInOddsFragment">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:src="@drawable/c"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        tools:ignore="MissingConstraints">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginEnd="8dp"
+                    android:src="@drawable/x"
+                    app:layout_constraintEnd_toStartOf="@id/textView1"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:fontFamily="@font/medium"
+                    android:text="EXPECTED VALUE \nIN ODDS"
+                    android:textColor="@color/b"
+                    android:textSize="38sp"
+                    app:layout_constraintStart_toEndOf="@id/imageView" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/f6" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/medium"
+                android:text="Expected Value in odds: The Poker \nInvestor’s Compass"
+                android:textColor="@color/white"
+                android:textSize="19sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:fontFamily="@font/light"
+                android:text="In the ever-shifting landscape of poker, where risks abound and opportunities flicker like stars in the night sky, expected value (EV) stands as the guiding light, illuminating the path for players navigating the complexities of odds, bluffs, and folds. Much like a seasoned investor assesses potential investments, a poker player evaluates the profitability of specific odds using EV, transforming each hand into a strategic investment opportunity."
+                android:textColor="@color/white"
+                android:textSize="17sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="16dp"
+                android:background="@drawable/text_view"
+                android:fontFamily="@font/light"
+                android:padding="10dp"
+                android:text="The Concept of Expected Value: A Financial Parallel"
+                android:textColor="#F5F878"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/light"
+                android:text="Expected value represents the average outcome of a odds over the long term, factoring in probabilities and potential gains or losses. This concept mirrors the calculations made by astute investors who weigh the risks and rewards of their financial decisions. In poker, making odds with a positive EV is comparable to choosing high-return assets in the investment world. These odds lead to sustained profitability, validating the wisdom of strategic decisions and ensuring enduring success in the poker market."
+                android:textColor="@color/white"
+                android:textSize="17sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="16dp"
+                android:background="@drawable/text_view"
+                android:fontFamily="@font/light"
+                android:padding="10dp"
+                android:text="Odds as Strategic Investments: A Parallel Universe"
+                android:textColor="#F5F878"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/light"
+                android:text="In the poker investment realm, every odds becomes an investment, and each decision is akin to choosing where to allocate capital. A positive EV odds is like a blue-chip stock, offering a stable return over time. It's a prudent choice, reflecting the investor's confidence in the underlying assets. Conversely, a negative EV odds mirrors a high-risk investment, promising substantial gains but at the cost of potential losses. Just as a wise investor diversifies their portfolio, a strategic poker player diversifies their odds, balancing risk and reward to maximize overall earnings."
+                android:textColor="@color/white"
+                android:textSize="17sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="16dp"
+                android:background="@drawable/text_view"
+                android:fontFamily="@font/light"
+                android:padding="10dp"
+                android:text="Calculated Decision-Making"
+                android:textColor="#F5F878"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/light"
+                android:text="By scrutinizing odds through the lens of expected value, a poker player transforms from a mere gambler to a shrewd investor. Each odds is no longer a blind wager but a calculated decision backed by probabilities and meticulous analysis. Just as a successful investor studies market trends, a skilled poker player studies opponents' behaviors and odds patterns. By aligning odds with positive EV, the player minimizes risks and ensures their poker portfolio thrives, growing steadily over time."
+                android:textColor="@color/white"
+                android:textSize="17sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="16dp"
+                android:background="@drawable/text_view"
+                android:fontFamily="@font/light"
+                android:padding="10dp"
+                android:text="Long-Term Flourishing: The Ultimate Goal"
+                android:textColor="#F5F878"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/light"
+                android:text="In both the financial world and the poker arena, the ultimate goal is long-term flourishing. Making strategic decisions based on expected value is the cornerstone of this success. It's about more than individual hands; it's about the sustainability of one's poker portfolio. As an investor carefully nurtures their investments, a poker player nurtures their odds, ensuring that each decision contributes to the overall growth of their bankroll. Through the lens of expected value, every odds becomes a step toward lasting success, transforming the game from chance into a strategic endeavor where informed decisions pave the way for enduring prosperity."
+                android:textColor="@color/white"
+                android:textSize="17sp" />
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

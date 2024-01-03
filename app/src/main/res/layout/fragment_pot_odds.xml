@@ -1,0 +1,127 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/a"
+    android:orientation="vertical"
+    tools:context="com.chihuahua.pokereducation.ui.fragments.maths.items.PotOddsFragment">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:src="@drawable/c"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        tools:ignore="MissingConstraints">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginEnd="8dp"
+                    android:src="@drawable/x"
+                    app:layout_constraintEnd_toStartOf="@id/textView1"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:fontFamily="@font/medium"
+                    android:text="Pot Odds &amp; \nExpected Value"
+                    android:textColor="@color/b"
+                    android:textSize="38sp"
+                    app:layout_constraintStart_toEndOf="@id/imageView" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/f2" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/medium"
+                android:text="Pot Odds and Expected Value: \nMaking Profitable Calls"
+                android:textColor="@color/white"
+                android:textSize="19sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="12dp"
+                android:fontFamily="@font/light"
+                android:text="In the dynamic realm of poker, mastering pot odds and expected value (EV) is akin to wielding a powerful weapon. It empowers players to make strategic and profitable decisions, especially when faced with critical moments at the table. Let's dive deeper into the concepts of pot odds and expected value, elucidating how they can significantly impact your gameplay."
+                android:textColor="@color/white"
+                android:textSize="17sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:fontFamily="@font/light"
+                android:text="Pot odds serve as a crucial metric, helping players determine whether calling a odds is financially justified. In the scenario presented, the pot odds are calculated by dividing the size of the opponent's odds (20 $) by the total pot size (120 $):"
+                android:textColor="@color/white"
+                android:textSize="17sp" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="24dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/formula2" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:fontFamily="@font/light"
+                android:text="Here, the pot odds indicate that your opponent's odds covers approximately 16,67% of the total pot. To make a profitable call, your chances of completing the flush (19,15%) must be higher than the pot odds. This understanding empowers you to make a rational decision. If the likelihood of completing your flush exceeds the pot odds, making the call becomes strategically sound. This calculation ensures you're investing your chips wisely, maximizing your potential gains while minimizing potential losses"
+                android:textColor="@color/white"
+                android:textSize="17sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:fontFamily="@font/light"
+                android:text="Expected value extends the concept of pot odds into a broader context. It evaluates the profitability of your overall odds strategies over the long term. By comparing the potential gains of a specific move with its associated costs, you can calculate your EV. In the context of the given scenario, if your opponent consistently odds 20 $ in situations similar to this one, and your chances of completing the flush remain at 19,15%, your expected value for calling becomes positive. This signifies that, over a significant number of similar situations, calling such bets will yield a profit."
+                android:textColor="@color/white"
+                android:textSize="17sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:fontFamily="@font/light"
+                android:text="Understanding the interplay between pot odds, expected value, and the probability of completing your hand transforms poker into a game of calculated risks and strategic decisions. By integrating these mathematical principles with your gameplay, you can make astute calls, precise raises, and well-timed folds. Over time, these skills elevate your poker game, making you a formidable opponent at the table. As you hone your abilities in assessing pot odds and expected value, you gain a strategic edge, turning every poker session into a calculated battle of wits and numbers."
+                android:textColor="@color/white"
+                android:textSize="17sp" />
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

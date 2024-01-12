@@ -5,30 +5,30 @@
         android:id="@+id/historyFragment"
         android:icon="@drawable/b1"
         android:title="History"
-        app:actionLayout="@layout/custom_menu_item_layout"
+        app:actionLayout="@layout/custom_bottom_nav_item"
         app:showAsAction="always" />
     <item
         android:id="@+id/mathsFragment"
         android:icon="@drawable/b2"
         android:title="Maths"
-        app:actionLayout="@layout/custom_menu_item_layout"
+        app:actionLayout="@layout/custom_bottom_nav_item"
         app:showAsAction="always" />
     <item
         android:id="@+id/casesFragment"
         android:icon="@drawable/b3"
         android:title="Cases"
-        app:actionLayout="@layout/custom_menu_item_layout"
+        app:actionLayout="@layout/custom_bottom_nav_item"
         app:showAsAction="always" />
     <item
         android:id="@+id/memoryFragment"
         android:icon="@drawable/b4"
         android:title="Memory"
-        app:actionLayout="@layout/custom_menu_item_layout"
+        app:actionLayout="@layout/custom_bottom_nav_item"
         app:showAsAction="always" />
     <item
         android:id="@+id/choicesFragment"
         android:icon="@drawable/b5"
         android:title="Choices"
-        app:actionLayout="@layout/custom_menu_item_layout"
+        app:actionLayout="@layout/custom_bottom_nav_item"
         app:showAsAction="always" />
 </menu>

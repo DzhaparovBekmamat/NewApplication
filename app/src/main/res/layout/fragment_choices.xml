@@ -25,9 +25,9 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:fontFamily="@font/medium"
-            android:text="HISTORY"
+            android:text="CHOICES"
             android:textColor="#F5F878"
-            android:textSize="38sp"
+            android:textSize="34sp"
             android:textStyle="bold" />
 
         <ImageView

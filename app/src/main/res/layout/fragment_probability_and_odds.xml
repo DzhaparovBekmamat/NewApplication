@@ -51,7 +51,7 @@
                     android:fontFamily="@font/medium"
                     android:text="PROBABILITY \nAND ODDS"
                     android:textColor="@color/b"
-                    android:textSize="38sp"
+                    android:textSize="34sp"
                     app:layout_constraintStart_toEndOf="@id/imageView" />
             </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -75,10 +75,10 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="12dp"
-                android:textSize="17sp"
                 android:fontFamily="@font/light"
                 android:text="Imagine you have a flush draw on the flop with 9 outs  (9 cards of the same suit remaining in the deck).  To calculate the probability of hitting your flush on the turn, use the following formula:"
-                android:textColor="@color/white" />
+                android:textColor="@color/white"
+                android:textSize="17sp" />
 
             <ImageView
                 android:layout_width="match_parent"

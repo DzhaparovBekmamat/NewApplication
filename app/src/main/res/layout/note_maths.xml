@@ -11,8 +11,8 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:backgroundTint="#011C1C"
         android:background="@drawable/corner"
+        android:backgroundTint="#011C1C"
         android:padding="12dp">
 
         <ImageView
@@ -34,7 +34,7 @@
             android:fontFamily="@font/light"
             android:text="Probability and Odds"
             android:textColor="#F5F878"
-            android:textSize="17sp"
+            android:textSize="15sp"
             app:layout_constraintStart_toEndOf="@id/imageView1" />
 
         <TextView
@@ -43,7 +43,9 @@
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="12dp"
             android:layout_marginTop="8dp"
+            android:ellipsize="end"
             android:fontFamily="@font/light"
+            android:maxLines="2"
             android:text="Poker, a card game that combines skill, strategy, and "
             android:textColor="#FFFFFF"
             android:textSize="12sp"

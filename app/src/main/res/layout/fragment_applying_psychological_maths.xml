@@ -20,7 +20,6 @@
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="1"
         tools:ignore="MissingConstraints">
 
         <LinearLayout
@@ -51,7 +50,7 @@
                     android:fontFamily="@font/medium"
                     android:text="APPLY MATHS \nPSYCHOLOGY"
                     android:textColor="@color/b"
-                    android:textSize="38sp"
+                    android:textSize="34sp"
                     app:layout_constraintStart_toEndOf="@id/imageView" />
             </androidx.constraintlayout.widget.ConstraintLayout>
 

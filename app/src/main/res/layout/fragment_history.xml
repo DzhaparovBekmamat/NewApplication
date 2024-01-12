@@ -35,7 +35,7 @@
                 android:fontFamily="@font/medium"
                 android:text="HISTORY"
                 android:textColor="#F5F878"
-                android:textSize="38sp"
+                android:textSize="34sp"
                 android:textStyle="bold" />
 
             <TextView

@@ -51,7 +51,7 @@
                     android:fontFamily="@font/medium"
                     android:text="THE RULE OF 2 &amp; 4"
                     android:textColor="@color/b"
-                    android:textSize="38sp"
+                    android:textSize="34sp"
                     app:layout_constraintStart_toEndOf="@id/imageView" />
             </androidx.constraintlayout.widget.ConstraintLayout>
 

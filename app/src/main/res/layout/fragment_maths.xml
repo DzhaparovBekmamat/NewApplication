@@ -33,7 +33,7 @@
                 android:fontFamily="@font/light"
                 android:text="MATHS"
                 android:textColor="#F5F878"
-                android:textSize="36sp"
+                android:textSize="34sp"
                 android:textStyle="bold" />
 
             <TextView
@@ -51,8 +51,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
-                tools:listitem="@layout/note_maths"
-                />
+                tools:listitem="@layout/note_maths" />
         </LinearLayout>
     </ScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>

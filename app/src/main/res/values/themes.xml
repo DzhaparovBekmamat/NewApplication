@@ -11,4 +11,10 @@
     </style>
 
     <style name="Theme.NewApplication" parent="Base.Theme.NewApplication" />
+
+    <style name="Widget.BottomNavigationView" parent="Widget.Design.BottomNavigationView">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:background">#F5F878</item>
+        <item name="android:tint">#A6B3B3</item>
+    </style>
 </resources>

@@ -75,18 +75,13 @@
             app:destination="@id/ruleOf2And4Fragment" />
     </fragment>
     <fragment
-        android:id="@+id/memoryFragment"
-        android:name="com.chihuahua.pokereducation.ui.fragments.memory.MemoryFragment"
-        android:label="fragment_memory"
-        tools:layout="@layout/fragment_memory" />
-    <fragment
         android:id="@+id/historyFragment"
         android:name="com.chihuahua.pokereducation.ui.fragments.history.HistoryFragment"
         android:label="HistoryFragment"
         tools:layout="@layout/fragment_history" />
     <fragment
         android:id="@+id/applyingPsychologicalMathsFragment"
-        android:name="com.chihuahua.pokereducation.ui.fragments.cases.items.ApplyingPsychologicalMathsFragment"
+        android:name="com.chihuahua.pokereducation.ui.fragments.maths.items.ApplyingPsychologicalMathsFragment"
         android:label="fragment_applying_psychological_maths"
         tools:layout="@layout/fragment_applying_psychological_maths" />
     <fragment
@@ -155,11 +150,6 @@
         android:label="fragment_case_study5"
         tools:layout="@layout/fragment_case_study5" />
     <fragment
-        android:id="@+id/caseStudy6Fragment"
-        android:name="com.chihuahua.pokereducation.ui.fragments.cases.items.CaseStudy6Fragment"
-        android:label="fragment_case_study6"
-        tools:layout="@layout/fragment_case_study6" />
-    <fragment
         android:id="@+id/caseStudy7Fragment"
         android:name="com.chihuahua.pokereducation.ui.fragments.cases.items.CaseStudy7Fragment"
         android:label="fragment_case_study7"
@@ -173,10 +163,32 @@
         android:id="@+id/gameFragment"
         android:name="com.chihuahua.pokereducation.ui.fragments.choices.quiz.fragments.GameFragment"
         android:label="fragment_game"
-        tools:layout="@layout/fragment_game" />
+        tools:layout="@layout/fragment_game">
+        <action
+            android:id="@+id/action_gameFragment_to_scoreFragment"
+            app:destination="@id/scoreFragment">
+            <argument
+                android:name="correctAnswers"
+                app:argType="integer" />
+        </action>
+    </fragment>
     <fragment
         android:id="@+id/scoreFragment"
         android:name="com.chihuahua.pokereducation.ui.fragments.choices.quiz.fragments.ScoreFragment"
         android:label="fragment_score"
-        tools:layout="@layout/fragment_score" />
+        tools:layout="@layout/fragment_score">
+        <argument
+            android:name="correctAnswers"
+            app:argType="integer" />
+    </fragment>
+    <fragment
+        android:id="@+id/caseStudy6Fragment"
+        android:name="com.chihuahua.pokereducation.ui.fragments.cases.items.CaseStudy6Fragment"
+        android:label="fragment_case_study6"
+        tools:layout="@layout/fragment_case_study6" />
+    <fragment
+        android:id="@+id/memoryFragment"
+        android:name="com.chihuahua.pokereducation.ui.fragments.memory.MemoryFragment"
+        android:label="fragment_memory"
+        tools:layout="@layout/fragment_memory" />
 </navigation>

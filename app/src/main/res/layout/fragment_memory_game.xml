@@ -1,0 +1,387 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/a"
+    android:foregroundGravity="center"
+    tools:context="com.chihuahua.pokereducation.ui.fragments.memory.MemoryGameFragment">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/c"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/title_memory_gameTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:fontFamily="@font/medium"
+        android:text="@string/level"
+        android:textAllCaps="true"
+        android:textColor="@color/b"
+        android:textSize="34sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/memory_dateLL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title_memory_gameTV">
+
+        <TextView
+            android:id="@+id/level_task_memory_gameTV"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:fontFamily="@font/light"
+            android:text="@string/memory_task_base"
+            android:textColor="@color/white"
+            android:textSize="19sp" />
+
+        <TextView
+            android:id="@+id/memory_timerTV"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:background="@color/black_green"
+            android:fontFamily="@font/medium"
+            android:gravity="center"
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp"
+            android:text="@string/memory_timer"
+            android:textAlignment="center"
+            android:textColor="@color/b"
+            android:textSize="38sp" />
+    </LinearLayout>
+
+    <TableLayout
+        android:id="@+id/memory_cardsTL"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="16dp"
+        android:gravity="center"
+        app:layout_constraintBottom_toTopOf="@+id/memory_gameBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/memory_dateLL">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="match_parent"
+                android:layout_margin="6dp"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                android:foreground="@drawable/card_border_selected"
+                android:foregroundTint="#00FFFFFF"
+                app:srcCompat="@drawable/cards_back" />
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="match_parent"
+                android:layout_margin="6dp"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                android:foreground="@drawable/card_border_selected"
+                android:foregroundTint="#00FFFFFF"
+                app:srcCompat="@drawable/cards_back" />
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="match_parent"
+                android:layout_margin="6dp"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                android:foreground="@drawable/card_border_selected"
+                android:foregroundTint="#00FFFFFF"
+                app:srcCompat="@drawable/cards_back" />
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="match_parent"
+                android:layout_margin="6dp"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                android:foreground="@drawable/card_border_selected"
+                android:foregroundTint="#00FFFFFF"
+                app:srcCompat="@drawable/cards_back" />
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="match_parent"
+                android:layout_margin="6dp"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                android:foreground="@drawable/card_border_selected"
+                android:foregroundTint="#00FFFFFF"
+                android:visibility="gone"
+                app:srcCompat="@drawable/cards_back" />
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="match_parent"
+                android:layout_margin="6dp"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                android:foreground="@drawable/card_border_selected"
+                android:foregroundTint="#00FFFFFF"
+                android:visibility="gone"
+                app:srcCompat="@drawable/cards_back" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="match_parent"
+                android:layout_margin="6dp"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                android:foreground="@drawable/card_border_selected"
+                android:foregroundTint="#00FFFFFF"
+                app:srcCompat="@drawable/cards_back" />
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="match_parent"
+                android:layout_margin="6dp"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                android:foreground="@drawable/card_border_selected"
+                android:foregroundTint="#00FFFFFF"
+                app:srcCompat="@drawable/cards_back" />
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="match_parent"
+                android:layout_margin="6dp"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                android:foreground="@drawable/card_border_selected"
+                android:foregroundTint="#00FFFFFF"
+                app:srcCompat="@drawable/cards_back" />
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="match_parent"
+                android:layout_margin="6dp"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                android:foreground="@drawable/card_border_selected"
+                android:foregroundTint="#00FFFFFF"
+                app:srcCompat="@drawable/cards_back" />
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="match_parent"
+                android:layout_margin="6dp"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                android:foreground="@drawable/card_border_selected"
+                android:foregroundTint="#00FFFFFF"
+                android:visibility="gone"
+                app:srcCompat="@drawable/cards_back" />
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="match_parent"
+                android:layout_margin="8dp"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                android:foreground="@drawable/card_border_selected"
+                android:foregroundTint="#00FFFFFF"
+                android:visibility="gone"
+                app:srcCompat="@drawable/cards_back" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="match_parent"
+                android:layout_margin="6dp"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                android:foreground="@drawable/card_border_selected"
+                android:foregroundTint="#00FFFFFF"
+                app:srcCompat="@drawable/cards_back" />
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="match_parent"
+                android:layout_margin="6dp"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                android:foreground="@drawable/card_border_selected"
+                android:foregroundTint="#00FFFFFF"
+                app:srcCompat="@drawable/cards_back" />
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="match_parent"
+                android:layout_margin="6dp"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                android:foreground="@drawable/card_border_selected"
+                android:foregroundTint="#00FFFFFF"
+                app:srcCompat="@drawable/cards_back" />
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="match_parent"
+                android:layout_margin="6dp"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                android:foreground="@drawable/card_border_selected"
+                android:foregroundTint="#00FFFFFF"
+                app:srcCompat="@drawable/cards_back" />
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="match_parent"
+                android:layout_margin="6dp"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                android:foreground="@drawable/card_border_selected"
+                android:foregroundTint="#00FFFFFF"
+                android:visibility="gone"
+                app:srcCompat="@drawable/cards_back" />
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="match_parent"
+                android:layout_margin="6dp"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                android:foreground="@drawable/card_border_selected"
+                android:foregroundTint="#00FFFFFF"
+                android:visibility="gone"
+                app:srcCompat="@drawable/cards_back" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="match_parent"
+                android:layout_margin="6dp"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                android:foreground="@drawable/card_border_selected"
+                android:foregroundTint="#00FFFFFF"
+                android:visibility="gone"
+                app:srcCompat="@drawable/cards_back" />
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="match_parent"
+                android:layout_margin="6dp"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                android:foreground="@drawable/card_border_selected"
+                android:foregroundTint="#00FFFFFF"
+                android:visibility="gone"
+                app:srcCompat="@drawable/cards_back" />
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="match_parent"
+                android:layout_margin="6dp"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                android:foreground="@drawable/card_border_selected"
+                android:foregroundTint="#00FFFFFF"
+                android:visibility="gone"
+                app:srcCompat="@drawable/cards_back" />
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="match_parent"
+                android:layout_margin="6dp"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                android:foreground="@drawable/card_border_selected"
+                android:foregroundTint="#00FFFFFF"
+                android:visibility="gone"
+                app:srcCompat="@drawable/cards_back" />
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="match_parent"
+                android:layout_margin="6dp"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                android:foreground="@drawable/card_border_selected"
+                android:foregroundTint="#00FFFFFF"
+                android:visibility="gone"
+                app:srcCompat="@drawable/cards_back" />
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="match_parent"
+                android:layout_margin="6dp"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                android:foreground="@drawable/card_border_selected"
+                android:foregroundTint="#00FFFFFF"
+                android:visibility="gone"
+                app:srcCompat="@drawable/cards_back" />
+
+        </TableRow>
+    </TableLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/memory_gameBtn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/button_yellow"
+        android:fontFamily="@font/medium"
+        android:paddingHorizontal="56dp"
+        android:paddingVertical="8dp"
+        android:text="@string/start"
+        android:textAllCaps="false"
+        android:textSize="19sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/memory_nav"
+    app:startDestination="@id/memoryGameFragment">
+
+    <fragment
+        android:id="@+id/memoryGameFragment"
+        android:name="com.chihuahua.pokereducation.ui.fragments.memory.MemoryGameFragment"
+        tools:layout="@layout/fragment_memory_game">
+        <action
+            android:id="@+id/game_to_result"
+            app:destination="@id/memoryResultsFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/memoryResultsFragment"
+        android:name="com.chihuahua.pokereducation.ui.fragments.memory.MemoryResultsFragment"
+        tools:layout="@layout/fragment_memory_results" />
+</navigation>

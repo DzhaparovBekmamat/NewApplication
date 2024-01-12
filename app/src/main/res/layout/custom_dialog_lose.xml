@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#032525"
+    android:orientation="vertical"
+    android:padding="12dp">
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/medium"
+        android:text="you lose..."
+        android:textAllCaps="true"
+        android:textColor="@color/b"
+        android:textSize="34sp" />
+
+    <TextView
+        android:id="@+id/descriptionLose"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/light"
+        android:text="Opponent reveals a higher pair and takes the pot"
+        android:textColor="@color/white"
+        android:textSize="16sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:layout_weight="1"
+            android:background="@drawable/button_game"
+            android:fontFamily="@font/medium"
+            android:paddingHorizontal="50dp"
+            android:paddingVertical="8dp"
+            android:text="Continue"
+            android:textAllCaps="false"
+            android:textColor="@color/b"
+            android:textSize="16sp" />
+
+        <Space
+            android:layout_width="12dp"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_weight="1"
+            android:background="@drawable/button_yellow"
+            android:fontFamily="@font/medium"
+            android:paddingHorizontal="50dp"
+            android:paddingVertical="8dp"
+            android:text="Try again"
+            android:textAllCaps="false"
+            android:textSize="16sp" />
+    </LinearLayout>
+</LinearLayout>

@@ -12,6 +12,7 @@ import com.google.android.material.bottomnavigation.BottomNavigationView
 import com.template.newapplication.R
 import com.template.newapplication.databinding.FragmentCasesBinding
 
+@Suppress("UNUSED_EXPRESSION")
 class CasesFragment : Fragment(), CasesAdapter.OnItemClickListener {
     private var _binding: FragmentCasesBinding? = null
     private val binding get() = _binding!!
@@ -80,16 +81,15 @@ class CasesFragment : Fragment(), CasesAdapter.OnItemClickListener {
 
     override fun onItemClick(position: Int) {
         val clickedItem = casesAdapter.getItemAtPosition(position)
-        val title = clickedItem.title
-        when (title) {
+        when (clickedItem.title) {
             "Case Study 1" -> findNavController().navigate(R.id.caseStudy1Fragment)
             "Case Study 2" -> findNavController().navigate(R.id.caseStudy2Fragment)
             "Case Study 3" -> findNavController().navigate(R.id.caseStudy3Fragment)
             "Case Study 4" -> findNavController().navigate(R.id.caseStudy4Fragment)
             "Case Study 5" -> findNavController().navigate(R.id.caseStudy5Fragment)
-            "Case Study 6" -> findNavController().navigate(R.id.caseStudy6Fragment)
             "Case Study 7" -> findNavController().navigate(R.id.caseStudy7Fragment)
             "Case Study 8" -> findNavController().navigate(R.id.caseStudy8Fragment)
+            "Case Study 6" -> findNavController().navigate(R.id.caseStudy6Fragment)
             else -> null
         }
     }

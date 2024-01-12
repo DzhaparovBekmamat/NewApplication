@@ -1,6 +1,5 @@
 package com.chihuahua.pokereducation.ui.fragments.choices.quiz.model
 
-import com.chihuahua.pokereducation.ui.fragments.choices.quiz.model.QuizModel
 import com.template.newapplication.R
 
 /**
@@ -8,24 +7,13 @@ import com.template.newapplication.R
  */
 object Constants {
     fun getQuestion(): ArrayList<QuizModel> {
-        val questionList = ArrayList<QuizModel>()/*
-         val que1 = Question(
-            1,
-            "Who is the all-time leading goal scorer in FIFA World Cup history?",
-            R.drawable.a,
-            "Lionel Messi",
-            "Cristiano Ronaldo",
-            "Pele",
-            "Neymar Jr.",
-            3
-        )
-         */
+        val questionList = ArrayList<QuizModel>()
         val question1 = QuizModel(
             1,
             "LEVEL 1",
             "You're dealt a pair of Jacks, a decent hand but not unbeatable. Your opponent seems confident, odds aggressively. Do you risk it all and go all-in, or fold and live to fight another hand?",
             R.drawable.s1,
-            "Decide whether to go all-in or fold \u2028with a pair of Jacks",
+            "Decide whether to go all-in or fold \nwith a pair of Jacks",
             "Go All-In",
             "Fold",
             1
@@ -35,7 +23,7 @@ object Constants {
             "LEVEL 2",
             "The river card is revealed, completing the community cards. You have a weak hand, but your opponent looks uncertain. Do you try a bold bluff, hoping to make them fold, or play it safe and check, hoping your opponent isn't holding a stronger hand?",
             R.drawable.s21,
-            "Decide whether to bluff on the river with \u2028a weak hand",
+            "Decide whether to bluff on the river with \na weak hand",
             "Bluff",
             "Check",
             1
@@ -55,7 +43,7 @@ object Constants {
             "LEVEL 4",
             "You're holding a potential straight, but it's not there yet. The board looks unassuming. Do you make a significant odds, trying to scare your opponent away and bluff them out, or do you check, hoping to see the next card \u2028for free?",
             R.drawable.s3,
-            "Decide whether to make a big odd on the turn \u2028with a potential straight",
+            "Decide whether to make a big odd on the turn \nwith a potential straight",
             "Odd Big",
             "Check",
             1
@@ -65,7 +53,7 @@ object Constants {
             "LEVEL 5",
             "You've got a strong hand, but your opponent seems aggressive, possibly bluffing. Do you trap them by just calling, hoping they'll overcommit, or do you fold, fearing they might actually have a better hand?",
             R.drawable.s51,
-            "Decide whether to trap your opponent \u2028with a strong hand or fold to a suspected bluff",
+            "Decide whether to trap your opponent \nwith a strong hand or fold to a suspected bluff",
             "Trap",
             "Fold",
             1
@@ -75,7 +63,7 @@ object Constants {
             "LEVEL 6",
             "You find yourself with a pair of Aces before the flop - a powerful starting hand. Do you go all-in, trying to intimidate opponents and win big, or do you call, hoping to entice more players into the pot?",
             R.drawable.s4,
-            "Decide whether to go all-in \u2028with a pair of Aces pre-flop",
+            "Decide whether to go all-in \nwith a pair of Aces pre-flop",
             "Go all in",
             "Call",
             1
@@ -85,7 +73,7 @@ object Constants {
             "LEVEL 7",
             "You're holding an open-ended straight draw, giving you several potential winning hands. Do you odds confidently, semi-bluffing and possibly forcing your opponent to fold, or do you check, risking your opponent catching \u2028a better hand on the next card?",
             R.drawable.s5,
-            "Decide whether to semi-bluff with \u2028an open-ended straight draw",
+            "Decide whether to semi-bluff with \nan open-ended straight draw",
             "Semi-Bluff",
             "Check",
             1

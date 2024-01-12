@@ -51,7 +51,7 @@
                     android:fontFamily="@font/medium"
                     android:text="Pot Odds &amp; \nExpected Value"
                     android:textColor="@color/b"
-                    android:textSize="38sp"
+                    android:textSize="34sp"
                     app:layout_constraintStart_toEndOf="@id/imageView" />
             </androidx.constraintlayout.widget.ConstraintLayout>
 
